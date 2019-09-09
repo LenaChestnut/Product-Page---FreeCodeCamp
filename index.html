@@ -9,23 +9,38 @@
     </head>
     <body>
         <header id="header">
-            <img id="header-img" src="images/blender_logo.png" alt="blender-logo">
+            <img id="header-img" src="images/blender_logo.png" alt="Blender">
             <nav id="nav-bar">
                 <ul>
                     <li class="nav-link"><a href="#about">About</a></li>
                     <li class="nav-link"><a href="#features">Features</a></li>
-                    <li class="nav-link"><a href="#gallery">Gallery</a></li>
+                    <li class="nav-link"><a href="#short-film">Film</a></li>
                 </ul>
             </nav>
         </header>
-        <div id="about">
-            
-        </div>
-        <div id="features">
-
-        </div>
-        <div id="gallery">
-            <iframe id="video" src="https://www.youtube.com/embed/WhWc3b3KhnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <section class="info">
+            <div id="about">
+                <h2 class="segment-title">About Blender</h2>
+                <p>Blender is a free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, motion graphics, interactive 3D applications, and computer games.</p>
+            </div>
+            <div id="features">
+                <h2 class="segment-title">Features</h2>
+                <p>Blender includes numerous features which can be used for rendering, modelling, sculpting, 3D animation and rigging, VFX and even 2D animation.</p>
+            </div>
+            <div id="short-film">
+                <h2 class="segment-title">Short Film</h2>
+                <p>Before the release of the latest update, Blender 2.8, the company released a short film called "Spring" made entirely in the program.</p>
+                <div class="video-container">
+                    <iframe id="video" src="https://www.youtube.com/embed/WhWc3b3KhnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <div class="form-container">
+            <form action="" id="form" class="form">
+                <p>Subscribe to our newsletter!</p>
+                <input type="email" id="email" placeholder="Your email">
+                <input type="submit" value="Submit" id="submit" formaction="https://www.freecodecamp.com/email-submit"> 
+            </form>
         </div>
     </body>
 </html>

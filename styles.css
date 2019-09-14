@@ -55,7 +55,7 @@ body {
     height: 30px;
     display: inline-block;
     position: relative;
-    top: -3px;
+    top: -4px;
 }
 
 .info {
@@ -72,13 +72,15 @@ body {
 }
 
 h2.segment-title {
-    font-size: 1.5rem;
-    margin: 1rem auto 0.5rem;
-    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+    margin: 1.6rem auto 0.5rem;
+    text-align: left;
 }
 
 .info p {
     margin: 0 auto 1.5rem;
+    font-size: 18px;
 }
 
 #short-film p {
@@ -99,6 +101,10 @@ h2.segment-title {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+iframe {
+    border: none;
 }
 
 .form-container {
@@ -131,7 +137,7 @@ h2.segment-title {
     width: 100%;
     height: auto;
     max-width: 250px;
-    padding: 8px 8px 6px;
+    padding: 9px 8px 6px;
     font-family: "Manjari", "Arial", sans-serif;
     font-size: 14px;
     border: none;
@@ -143,20 +149,7 @@ h2.segment-title {
     background-color: #FF7021;
     border: none;
     color: white;
-    padding: 10px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
-    font-family: "Manjari", "Arial", sans-serif;
-}
-
-#submit {
-    display: inline-block;
-    background-color: #FF7021;
-    border: none;
-    color: white;
-    padding: 12px 32px 10px;
+    padding: 13px 32px 10px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
@@ -166,6 +159,40 @@ h2.segment-title {
 
 #submit:hover,
 #submit:focus {
-    background-color: rgb(219, 85, 13); 
+    background-color: rgb(219, 85, 13);
+    outline: 0;
 }
-/* DO MOBILE FIRST */
+
+#submit:active {
+    border: none;
+    background-color: rgb(194, 70, 3);
+}
+
+@media (min-width: 600px) {
+    #header {
+        max-width: 100%;
+        padding: 0 5vw;
+    }
+}
+
+@media (min-width: 750px) {
+    .info, form {
+        width: 65%;
+        margin: auto;
+    }
+
+    h2.segment-title {
+        font-size: 26px;
+        font-weight: 700;
+        margin: 1.8rem auto 0.7rem;
+        text-align: left;
+    }
+    
+    .info p {
+        margin: 0 auto;
+        font-size: 21px;
+    }
+}
+
+/* font for p smaller, column more narrow*/
+
